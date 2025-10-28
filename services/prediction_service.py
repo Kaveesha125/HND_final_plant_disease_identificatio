@@ -1,4 +1,3 @@
-# services/prediction_service.py
 import tensorflow as tf
 from PIL import Image
 import numpy as np
@@ -7,7 +6,6 @@ import io
 MODEL_PATH = "model.tfliteQuant"
 LABELS_PATH = "Labels.txt"
 
-# Load the TensorFlow Lite model
 try:
     interpreter = tf.lite.Interpreter(model_path=MODEL_PATH)
     interpreter.allocate_tensors()

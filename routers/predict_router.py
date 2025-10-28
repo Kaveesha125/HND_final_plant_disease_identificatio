@@ -1,11 +1,9 @@
 # routers/predict_router.py
-from fastapi import APIRouter, File, UploadFile, HTTPException,Depends
+from fastapi import APIRouter, File, UploadFile, HTTPException
 from fastapi.responses import JSONResponse
 from services import prediction_service
-from utils.auth import verify
 
-
-router = APIRouter(dependencies=[Depends(verify)])
+router = APIRouter()
 
 @router.post("/predict")
 async def predict_disease(file: UploadFile = File(...)):
