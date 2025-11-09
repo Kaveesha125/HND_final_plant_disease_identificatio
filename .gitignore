@@ -54,3 +54,4 @@ instance/
 *.key
 *.pid.lock
 docker-compose.override.yml
+Dockerfile
