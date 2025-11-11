@@ -1,4 +1,3 @@
-# routers/predict_router.py
 from fastapi import APIRouter, File, UploadFile, HTTPException
 from fastapi.responses import JSONResponse
 from services import prediction_service

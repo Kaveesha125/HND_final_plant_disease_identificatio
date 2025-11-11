@@ -1,4 +1,3 @@
-# FILE: utils/auth.py
 from fastapi import Request, HTTPException, status
 from utils.supabase import supabase  # Make sure this import matches your file
 
